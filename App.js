@@ -18,9 +18,7 @@ export default function App() {
     AbhayaLibre_700Bold,
     AbhayaLibre_800ExtraBold,
   });
-  let x=29;
   console.log("successful");
-  console.log(useDimensions);
   return (
    
     <SafeAreaView style={styles.container}>
