@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "first try at mobile development",
+    "githubUrl": "https://github.com/EyalLabel/mobileApp"
   }
 }
