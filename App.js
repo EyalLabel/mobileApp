@@ -18,6 +18,9 @@ export default function App() {
     AbhayaLibre_700Bold,
     AbhayaLibre_800ExtraBold,
   });
+  if (!fontsLoaded) {
+    return null;
+  }
   console.log("successful");
   return (
    
