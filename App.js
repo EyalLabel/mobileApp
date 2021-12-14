@@ -9,6 +9,7 @@ import {
   AbhayaLibre_700Bold,
   AbhayaLibre_800ExtraBold,
 } from '@expo-google-fonts/abhaya-libre';
+import{useDimensions} from '@react-native-community/hooks';
 export default function App() {
   let [fontsLoaded] = useFonts({
     AbhayaLibre_400Regular,
@@ -19,6 +20,7 @@ export default function App() {
   });
   let x=29;
   console.log("successful");
+  console.log(useDimensions);
   return (
    
     <SafeAreaView style={styles.container}>
