@@ -21,11 +21,14 @@ function PlantsScreen(props) {
     </View>
       <Text>I did it mom!</Text> 
       <TouchableWithoutFeedback onPress={()=>console.log("puppy")}> 
+      <View style={styles.imageStyle}>
       <Image resizeMode="cover"
       source={{
         width:250,
-        height:300,
-        uri:"https://picsum.photos/id/237/200/300"}}/>
+        height:200,
+        uri:"https://picsum.photos/id/237/200/300"}}
+        />
+        </View>
         </TouchableWithoutFeedback>
       <StatusBar style="auto" />
     </SafeAreaView>
@@ -33,14 +36,24 @@ function PlantsScreen(props) {
 }
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
       backgroundColor: '#E5E5E5',
       alignItems: 'center',
       justifyContent: 'center',
+      
+    },
+    imageStyle: {
+      marginTop:300,
+      flex:2,
+      backgroundColor: '#E5E5E5',
+      alignItems: 'center',
+      justifyContent: 'center',
+      margin:10,
     },
     topper:{
       position: 'absolute',
       width:414,height:97,left:0,top:69,
+      flex:1,
+      margin:10,
     },
     titleText:{
       fontFamily: 'AbhayaLibre_400Regular',
