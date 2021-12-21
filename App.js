@@ -19,6 +19,16 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   console.log("successful");
+  let [fontsLoaded] = useFonts({
+    AbhayaLibre_400Regular,
+    AbhayaLibre_500Medium,
+    AbhayaLibre_600SemiBold,
+    AbhayaLibre_700Bold,
+    AbhayaLibre_800ExtraBold,
+  });
+  if (!fontsLoaded) {
+    return null;
+  }
   return (
    <NavigationContainer>
      <Stack.Navigator>

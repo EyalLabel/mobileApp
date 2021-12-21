@@ -10,16 +10,7 @@ import {
   AbhayaLibre_800ExtraBold,
 } from '@expo-google-fonts/abhaya-libre';
 function WelcomeScreen(props) {
-  let [fontsLoaded] = useFonts({
-    AbhayaLibre_400Regular,
-    AbhayaLibre_500Medium,
-    AbhayaLibre_600SemiBold,
-    AbhayaLibre_700Bold,
-    AbhayaLibre_800ExtraBold,
-  });
-  if (!fontsLoaded) {
-    return null;
-  }
+  
     return (
         <SafeAreaView style={styles.container}>
        <View style={styles.topper}>
